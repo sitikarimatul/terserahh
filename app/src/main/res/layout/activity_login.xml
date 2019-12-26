@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:gravity="center"
+  android:background="@color/colorPrimary"
+  tools:context=".loginActivity">
+
+  <LinearLayout
+    android:layout_width="399dp"
+    android:layout_height="730dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginBottom="50dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+      android:layout_width="146dp"
+      android:layout_height="101dp"
+      android:src="@drawable/login" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="16dp"
+      android:background="@drawable/rounded_background"
+      android:gravity="center"
+      android:orientation="vertical">
+
+
+      <EditText
+        android:id="@+id/edtNpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_action_name"
+        android:hint="NPM"
+        android:inputType="textAutoComplete" />
+
+      <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_password"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+      <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/rounded_background"
+        android:text="login" />
+
+      <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Belum punya akun?   " />
+
+        <Button
+          android:id="@+id/btnLinkRegister"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@null"
+          android:text="Daftar disini" />
+
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:gravity="center"
+  android:background="#ccff">
+  tools:context=".registrasiActivity">
+
+  <ImageView
+    android:layout_width="146dp"
+    android:layout_height="101dp"
+    android:src="@drawable/teamwork" />
+
+  <LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/rounded_background"
+    >
+
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edtNpm"
+      android:hint="NPM"
+      android:inputType="textAutoComplete"
+      android:drawableRight="@drawable/ic_action_name"/>
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edtProdi"
+      android:hint="Prodi"
+      android:inputType="textAutoComplete"
+      android:drawableRight="@drawable/ic_action_name"/>
+
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edtNama"
+      android:hint="Nama"
+      android:inputType="textAutoComplete"
+      android:drawableRight="@drawable/ic_action_name"/>
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edtPassword"
+      android:hint="Password"
+      android:inputType="textPassword"
+      android:drawableRight="@drawable/ic_password"/>
+
+    <Button
+      android:id="@+id/btnKirim"
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="6dp"
+      android:layout_marginLeft="5dp"
+      android:text="Daftar"
+      android:background="@drawable/rounded_background"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginTop="5dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun?   "/>
+
+      <Button
+        android:id="@+id/btnLinkLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Masuk disini" />
+
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
